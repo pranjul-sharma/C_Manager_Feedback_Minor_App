@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:paddingTop="@dimen/appbar_padding_top"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_write_feed"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimaryDark"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+
+
+    </android.support.design.widget.AppBarLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:id="@+id/feed_tt1"
+        android:text="Receiver"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="10dp"
+        android:paddingStart="25dp"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:background="@drawable/spinner_bg"
+        android:layout_marginStart="20sp"
+        android:id="@+id/spinner_feedback"
+        android:layout_marginEnd="20sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimary"
+        android:text="Title"
+        android:id="@+id/feed_tt2"
+        android:layout_marginTop="10dp"
+        android:paddingStart="25dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/ed_title_feedback"
+        android:textSize="16dp"
+        android:layout_marginLeft="20dp"
+        android:paddingStart="12sp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/custom_edittext"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:text="Description"
+        android:id="@+id/feed_tt3"
+        android:layout_marginTop="10dp"
+        android:paddingStart="25dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:paddingStart="12sp"
+        android:layout_height="160dp"
+        android:id="@+id/ed_content_feedback"
+        android:layout_marginTop="5dp"
+        android:textSize="16dp"
+        android:hint="describe about your day today"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/custom_edittext"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="save feedback"
+        android:onClick="submitFeedback"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/btn_bg"
+        android:layout_margin="20sp"
+        android:id="@+id/button_save_feedback"
+        android:layout_marginTop="20dp"
+        />
+
+</LinearLayout>
